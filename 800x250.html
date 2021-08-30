@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRU_Lilly-Branding</title>
+    <meta content="Version: 3.0.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="ad.size" content="width=800,height=250">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: Avenir-Black;
+            src: url(fonts/AvenirLTStd-Black.otf)
+        }
+        
+        @font-face {
+            font-family: Avenir-condensed;
+            src: url(fonts/AvenirNextCondensed-Regular-08.ttf)
+        }
+        
+        .container,
+        body {
+            width: 800px;
+            height: 250px
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            position: relative;
+            width: 800px;
+            height: 250px;
+            background: #fff;
+            overflow: hidden;
+            margin: 0px;
+        }
+        
+        .static {
+            position: absolute;
+            right: 0px;
+            height: 100%;
+            max-width: 1200px;
+            width: 100%;
+            background-color: transparent;
+            margin: 0px;
+            z-index: 0
+        }
+        
+        .slidein1,
+        .slidein2,
+        .slidein3 {
+            position: absolute;
+            background-color: transparent;
+        }
+        
+        .slidein1 {
+            margin-top: 5px;
+            margin-left: -7px;
+            background-color: transparent;
+        }
+        
+        .slidein2 {
+            margin-top: 45px;
+            margin-left: 6px;
+            background-color: transparent;
+        }
+        
+        .slidein3 {
+            margin-left: 20px;
+            margin-top: 170px;
+            border-width: 300px;
+            border-height: 83.3px;
+            background-color: transparent;
+        }
+        
+        .text1 {
+            font-size: 25px;
+            text-align: center;
+            color: rgb(87, 47, 180);
+            margin-top: -6px;
+            margin-left: -30px;
+            font-family: Avenir-Black;
+            font-stretch: expanded;
+            text-transform: inherit;
+        }
+        
+        .tackice {
+            margin-left: 32px;
+        }
+        
+        .text2 {
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 19px;
+            letter-spacing: 2px;
+            height: 70px;
+            color: rgb(87, 47, 180);
+            font-family: Avenir-condensed;
+            font-stretch: extra-expanded;
+            background-color: transparent;
+        }
+        
+        .text2small {
+            margin-top: 2px;
+            margin-left: 20px;
+            font-size: 9px;
+            color: rgb(107, 63, 209);
+            font-family: Avenir-condensed;
+            font-stretch: expanded;
+            letter-spacing: 0.6px;
+            background-color: transparent;
+        }
+        
+        .green {
+            margin-left: 2px;
+        }
+        
+        .text3 {
+            margin-top: 2px;
+            margin-left: 6px;
+            font-size: 16px;
+            color: rgb(87, 47, 180);
+            font-family: Avenir-Black;
+            font-stretch: expanded;
+            background-color: transparent;
+        }
+        
+        #slide11 {
+            position: absolute;
+            -webkit-animation: slide11 6s forwards;
+            -webkit-animation-delay: 0.5s;
+            animation: slide11 3s forwards;
+            animation-delay: 0.5s;
+        }
+        
+        #slide12 {
+            position: absolute;
+            -webkit-animation: slide11 6s forwards;
+            -webkit-animation-delay: 0.5s;
+            animation: slide11 3s forwards;
+            animation-delay: 3s;
+        }
+        
+        #slide13 {
+            position: absolute;
+            -webkit-animation: slide11 6s forwards;
+            -webkit-animation-delay: 0.5s;
+            animation: slide11 3s forwards;
+            animation-delay: 5s;
+        }
+        
+        @-webkit-keyframes slide11 {
+            0% {
+                left: -280px;
+                top: 3px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 3px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 3px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 3px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 3px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 3px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes slide11 {
+            0% {
+                left: -280px;
+                top: 3px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 3px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 3px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 3px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 3px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 3px;
+                opacity: 1
+            }
+        }
+        
+        @-webkit-keyframes slide12 {
+            0% {
+                left: -280px;
+                top: 33px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 33px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 33px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 33px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 33px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 33px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes slide12 {
+            0% {
+                left: -280px;
+                top: 33px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 33px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 33px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 33px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 33px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 33px;
+                opacity: 1
+            }
+        }
+        
+        @-webkit-keyframes slide13 {
+            0% {
+                left: -280px;
+                top: 3px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 3px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 3px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 3px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 3px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 3px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes slide13 {
+            0% {
+                left: -280px;
+                top: 3px;
+                opacity: 1
+            }
+            20% {
+                left: -221px;
+                top: 3px;
+                opacity: 1
+            }
+            40% {
+                left: -162px;
+                top: 3px;
+                opacity: 1
+            }
+            60% {
+                left: -103px;
+                top: 3px;
+                opacity: 1
+            }
+            80% {
+                left: -44px;
+                top: 3px;
+                opacity: 1
+            }
+            100% {
+                left: 15px;
+                top: 3px;
+                opacity: 1
+            }
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+
+    </script>
+    <script type="text/javascript">
+        var clickTag = "https://www.coliquio.de/wissen/Typ-2-Diabetes-100/0a31545e-6775-453a-a61b-769b4bc449a8-therapieeskalation-100";
+        var clickTag1 = "https://www.lilly-pharma.de/";
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container" class="container">
+        <div>
+            <img class="static" src="images/static.png">
+        </div>
+        <div class="slidein1" id="slide11">
+            <img class="tackice" src=" Images/tackice.png ">
+            <p class="text1" style="width: 330px; white-space: normal; font-size: 35px;">
+                <strong>Es ist soweit</strong></p>
+        </div>
+        <div class="slidein2" id="slide12">
+            <p class="text2 "><strong>Ab sofort ist
+                <br>Trulicity® 3,0 mg und 4,5 mg
+                <br>als 12er Packung erhältlich!</strong></p>
+            <p class="text2small ">PZN(3,0 mg x 12 Stk):16840363 │ PZN(4,5 mg x 12 Stk):16840400</p>
+        </div>
+        <div class="slidein3" id="slide13">
+            <img class="green " src="Images/green.png ">
+            <p class="text3 ">
+                <a href="https://www.lilly-pharma.de/" target="_blank">Fachinformation</a>
+            </p>
+        </div>
+    </div>
+    <div id="bannerCTA " class="bannerCTA " onclick="window.open(clickTag, &apos;_blank&apos;); "></div>
+    <div id="button1 " class="button1 " onclick="window.open(clickTag1, &apos;_blank&apos;); "></div>
+
+    <script>
+        animation("800x250 ");
+    </script>
+
+</body>
+
+</html>
